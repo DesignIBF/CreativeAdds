@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0em;
+  font-family: "Noto Serif Medium Condensed", serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+  display: block;
+  width: 300px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+}
+
+.grid {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 6px;
+}
+
+.grid > .mainBlock {
+  background-image: url(/images/MainBlockB.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 205px;
+  height: 239px;
+  display: flex;
+  border-radius: 12px;
+
+  flex-direction: column;
+  align-items: center;
+  background-position-y: 16px;
+  background-color: #F7F7F7;
+}
+
+h1 {
+  font-size: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  padding-top: 24px;
+}
+
+
+.grid > img {
+  height: 238px;
+  width: 205px;
+  animation: fadeIn 10s linear infinite;
+  position: relative;
+  grid-column: 1/2;
+}
+
+.grid > .logo {
+  display: none;
+}
+
+.grid > h1 {
+  position: relative;
+  top:30px
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 0;}
+
+}
+
+.row {
+  grid-column: 2/3;
+  margin-left: 6px;
+  position: relative;
+  
+  animation: slideDown 10s linear infinite;
+}
+
+/* The animation code */
+@keyframes slideDown {
+  from {bottom: 0px;}
+  to {bottom: 488px;}
+}
+
+.row img {
+  height: 729px;
+  width: 77px;
+}
+
+/* unvisited link */
+a:link {
+  color: #0C331F;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #0C331F;
+}
+
+/* mouse over link */
+a:hover {
+  color: #0C331F;
+}
+
+/* selected link */
+a:active {
+  color: #0C331F;
+}
+
+span {
+  color: #E01983;
+  text-decoration: underline;
+}
