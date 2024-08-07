@@ -28,7 +28,7 @@ body {
 }
 
 .grid > .mainBlock {
-  background-image: url(/images/MainBlockB.png);
+  background-image: url(../images/MainBlockB.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 205px;
