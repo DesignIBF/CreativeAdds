@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+@font-face {
+  font-family: 'Noto Serif Medium Condensed';
+  src: url('../fonts/NotoSerif_Condensed-Medium.woff') format('woff'),
+       url('../fonts/NotoSerif_Condensed-Medium.ttf') format('truetype');
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
 
 
 :root {
@@ -18,7 +24,10 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0em;
-  font-family: "Noto Serif Medium Condensed", serif;
+
+  font-family: 'Noto Serif Medium Condensed', serif;
+  /* letter-spacing: -.5px; */
+
   width: 100vw;
   height: 100vh;
   background-color: ghostwhite;
@@ -37,6 +46,7 @@ h2 {
   text-align: center;
   font-size: 15px;
   text-wrap: nowrap;
+  font-weight: 500;
 }
 
 #container {
@@ -122,7 +132,7 @@ h2 {
   grid-column: 1/2;
 
   background-color: rgba(0, 0, 0, 0.02);
-  background-image: url(/images/Flower.png);
+  background-image: url(../images/Flower.png);
 
   background-size: 300px auto;
   /* background-position: center -10px; */
@@ -183,7 +193,7 @@ span {
 
   animation: slideIn 20s ease-in-out infinite;
   
-  background-image: url(/images/SideBarB.png);
+  background-image: url(../images/SideBarB.png);
   background-size: cover;
 
   /* transform: translateY(0%); */
