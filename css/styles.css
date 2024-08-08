@@ -7,6 +7,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Noto Sans Medium";
+  src: url("../fonts/NotoSans-Medium.ttf") format('truetype');
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -47,6 +53,25 @@ h2 {
   font-size: 15px;
   text-wrap: nowrap;
   font-weight: 500;
+}
+
+button {
+  font-family: "Noto Sans Medium";
+  font-size: 12px;
+
+  position: absolute;
+  padding: 0.8em 1em;
+  border: 0px;
+  background-color: #E01983;
+  border-radius: 6px;
+  /* margin-top: 6px; */
+  color: white;
+  bottom: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
 }
 
 #container {
@@ -173,6 +198,8 @@ h2 {
   width: 120px;
 }
 
+
+
 span {
   color: var(--pink-color);
   text-decoration: underline;
@@ -274,7 +301,7 @@ span {
 
 
 
-.logo, h2 {
+.logo, h2, button {
   animation: fadeIn2 20s ease-in-out infinite;
 }
 
