@@ -1,1 +1,0 @@
-var clickTag = "https://www.google.com";
