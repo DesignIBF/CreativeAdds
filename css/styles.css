@@ -210,7 +210,7 @@ button:hover {
 }
 
 .frame1 > button {
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 .frame1 > h2 {
@@ -239,7 +239,7 @@ button:hover {
 
   animation: slideIn 20s ease-in-out infinite;
   
-  background-image: url(../images/SideBarB.png);
+  background-image: url(../images/SideBarB2.png);
   background-size: cover;
 
   /* transform: translateY(0%); */
@@ -315,7 +315,7 @@ button:hover {
 .frame3 > h3 {
   padding-top: 0em;
   padding-bottom: 0.5em;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .frame3 p {
